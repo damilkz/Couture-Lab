@@ -1,0 +1,35 @@
+/* Setting border-box with universal selector for easy debugging */
+* {
+    box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 10px 10px #282a36;
+    border: solid 3em transparent;
+    margin: 0.2em 0 0.2em 0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 10px 10px black;
+    border: solid 0.2em transparent;
+    border-radius: 1em;
+}
+
+/* Setting flex column layout for the overall page and page body */
+/* Maximum width is no more than viewport width, max-height stretches to fit content */
+html, body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    scroll-behavior: smooth !important;
+}

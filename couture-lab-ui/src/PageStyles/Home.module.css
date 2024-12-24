@@ -1,0 +1,173 @@
+.content-container {
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+    overflow-x: hidden;
+    min-width: 630px;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(#ffffff, #f2e9ff);
+    padding: 8.5em 0 20em 0;
+    color: #000000;
+    font-family: 'Helvetica';
+}
+
+.tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 43em;
+    top: 5em;
+}
+
+.intro-header {
+    z-index: 1;
+    font-size: 5em;
+    font-weight: 700;
+}
+
+.intro-description {
+    font-size: 1.75em;
+    z-index: 1;
+}
+
+.getstarted-link {
+    position: relative;
+    background-image: linear-gradient(to right, #e3d0ff, #68b7ff);
+    font-family: "MarkPro";
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    margin: 2em 0 0 0;
+    font-size: 1.3em;
+    font-weight: 600;
+    transition: 0.4s ease-out;
+}
+
+.getstarted-link::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: "Get Started";
+    background-image: linear-gradient(to right, #e66465, #9198e5);
+    border-radius: 0.5em;
+    transition: all 0.4s ease-in-out;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.getstarted-link:hover::after {
+    opacity: 1;
+}
+
+.whatweare-container {
+    padding: 6em;
+    text-align: center;
+    font-family: 'Helvetica';
+    font-size: 1.5em;
+    display: flex;
+}
+
+.dashboardview-container, .closetview-container, .chatbotview-container {
+    display: flex;
+    padding: 9em 12em 9em 12em;
+    gap: 3em;
+    font-family: 'Helvetica';
+}
+
+.dashboardview-container, .chatbotview-container {
+    background-color: #f6f6f6;
+}
+
+.dashboardview-header, .closetview-header, .chatbotview-header {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.dashboardview-description, .closetview-description, .chatbotview-description {
+    margin: 1.5em 0 0 0;
+    font-size: 1.4em;
+}
+
+.dashboardview-img, .closetview-img, .chatbotview-img {
+    width: 48em;
+    min-width: 30em;
+    border-radius: 0.5em;
+    border: 0.1em solid #000000;
+}
+
+.last-page {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 8em 0 5em 0;
+}
+
+.lastview-container {
+    display: flex;
+    flex-direction: column;
+    margin: 8em 5em 8em 5em;
+    align-items: center;
+    text-align: center;
+    font-family: 'Helvetica';
+}
+
+.lastview-header {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.lastview-link {
+    display: block;
+    position: relative;
+    margin: 1.5em 0 0 0;
+    padding: 0.5em 1em 0.5em 1em;
+    font-size: 1.5em;
+    font-family: "MarkPro";
+    font-weight: 600;
+    border-radius: 1.5em;
+    background-image: linear-gradient(to right, #e3d0ff, #68b7ff);
+    transition: all 0.5s;
+}
+
+.lastview-link::after {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    content: "Start Styling";
+    background-image: linear-gradient(to right, #e66465, #9198e5);
+    border-radius: 1.5em;
+    transition: all 0.4s ease-in-out;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+}
+
+.lastview-link:hover::after {
+    opacity: 1;
+}
+
+@media only screen and (max-width : 850px) {
+    /* fredson implement this */
+    .dashboardview-container, .closetview-container, .chatbotview-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 9em 4em 9em 4em;
+    }
+
+    .intro-container {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}

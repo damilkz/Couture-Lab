@@ -1,0 +1,242 @@
+.page-main {
+    display: flex;
+}
+
+.closet-container {
+    font-family: "MarkPro";
+    width: 100vw;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.closet-title {
+    text-align: center;
+    font-size: 3em;
+}
+
+.closet-options {
+    display: flex;
+    justify-content: space-between;
+    margin: 1vw;
+    margin-left: 2vw;
+}
+
+.closet-category-container {
+    display: flex;
+}
+
+.closet-category-button {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    margin: 0.8em;
+    padding: 0.2em 1.5em 0.2em 1.5em;
+    transition: all 0.3s;
+
+    /* Increase this as per requirement */
+    border-style: solid;
+    border-width: 0.15vw;
+    border-color: transparent;
+    border-radius: 0.6em;
+}
+
+.closet-category-button:hover {
+    border-color: black;
+}
+
+.closet-select-button {
+    display: flex;
+    align-items: center;
+    margin: 0.5vw;
+    padding: 0 2vw 0 2vw;
+    background-color: #cccccc;
+    font-size: 1.2em;
+    border-radius: 0.4vw;
+    transition: all 0.3s;
+}
+
+.closet-select-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.select-button-active {
+    background-color: black;
+    color: white;
+}
+
+.icon {
+    transform: scale(125%);
+    margin-right: 0.7vw;
+    padding-bottom: 0.1vh;
+}
+
+.accessory-icon {
+    margin-bottom: 0.8vh;
+}
+
+.category-button-active {
+    border-color: black;
+    background-color: black;
+    color: white;
+}
+
+.item-label, .outfit-item-label {
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s;
+    margin-bottom: 2vh;
+    border-radius: 1em;
+    border-style: dashed;
+    border-color: black;
+    border-width: 0.1vw;
+}
+
+.item-label {
+    height: fit-content;   
+}
+
+.outfit-item-label {
+    padding: 7.5em 9em 9em 9em;
+}
+
+.item-label:hover {
+    transform: scale(103%);
+    box-shadow: 0 0.5em 1.5em 0 rgba(0,0,0,0.75);
+}
+
+.gallery-item {
+    z-index: 0;
+    background-color: white;
+}
+
+.outfit-gallery-name {
+    font-size: 3em;
+}
+
+.checkbox {
+    cursor: pointer;
+    opacity: 0;
+    position: relative;
+    top: 2vh;
+    left: 20.5vw;
+    z-index: 1;
+}
+
+.checkbox-visible {
+    opacity: 1;
+}
+
+.clothes-image {
+    width: 22vw;
+    height: 48vh;
+    background-color: white;
+    object-fit: contain;
+    padding: 0.5em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+    transition: all 0.2s;
+}
+
+.closet-gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: end;
+}
+
+.closet-gallery-empty {
+    margin-right: 2.2vw;
+}
+
+.closet-add-button {
+    position: fixed;
+    bottom: 1.5vh;
+    right: 1.5vw;
+    padding: 1.3vw;
+    background-color: black;
+    border-radius: 100%;
+    transition: all 0.3s;
+}
+
+.closet-add-button:hover {
+    transform: scale(105%);
+}
+
+.add-button-disabled {
+    display: none;
+}
+
+.sheet-modal-container {
+    display: flex;
+    font-family: MarkPro;
+    font-size: 1.5vw;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.sheet-modal-header {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    justify-content: center;
+    background-color: black;
+}
+
+.down-arrow:hover {
+    opacity: 60%;
+}
+
+.sheet-modal-content {
+    display: flex;
+    font-size: 0.8em;
+    justify-content: space-between;
+    margin: 1vw;
+}
+
+.sheet-modal-label {
+    margin-top: 3.5vh;
+    margin-bottom: 3.5vh;
+}
+
+.sheet-modal-button-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.sheet-modal-button, .sheet-modal-create-outfit {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    background-color: white;
+    font-weight: bold;
+    padding: 0.8vw;
+    border-radius: 0.5em;
+    max-width: fit-content;
+    color: black;
+    transition: all 0.3s;
+}
+
+.sheet-modal-button:hover, .sheet-modal-create-oufit:hover {
+    color: white;
+}
+
+.sheet-modal-button:hover {
+    background-color: #e82222;
+}
+
+.sheet-modal-create-oufit:hover {
+    background-color: gray;
+}
+
+.spacer {
+    width: 0.5vw;
+}
+
+@media only screen and (max-width : 1250px) {
+    .closet-category-text {
+        display: none;
+    }
+}

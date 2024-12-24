@@ -1,0 +1,142 @@
+.profile-container {
+    /* Dealing with collapse */
+    height: 100vh;
+    min-width: 545px;
+}
+
+.profile-main-container {
+    font-family: "Helvetica";
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-gap: 3.125em;
+    margin: 2.5em 5em 2.5em 5em;
+}
+
+.profile-secondary-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.profile-userinfo-card, .profile-styling-card {
+    border: 0.15em solid #818589;
+    border-radius: 1em;
+}
+
+.profile-styling-card {
+    margin-bottom: 3em;
+}
+
+.profile-userinfo-card {
+    max-height: 14em;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.profile-userinfo-card-inner {
+    display: flex;
+    font-size: 1em;
+}
+
+.profile-userimg {
+    width: 8em;
+    border: 0.2em solid #bababa;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.profile-userinfo-text {
+    margin: 1em 0 0 0;
+    font-size: 1.2em;
+}
+
+.assistant-settings-container {
+    margin: 1em 1em 1em 1.5em;
+}
+
+.assistant-settings-card-header {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.assistant-settings-card-subheader {
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin: 0.5em 0 1.5em 0;
+}
+
+.profile-stylingbutton, .profile-updatebutton {
+    color: #ffffff;
+    padding: 0.5em 1em;
+    border-radius: 0.75em;
+    width: 95%;
+    transition: all 0.3s;
+}
+
+.profile-stylingbutton {
+    background-color: #000000;
+    margin: 1em 0 1em 0;
+    width: 95%;
+}
+
+.profile-updatebutton {
+    background-color: #808080;
+    margin: 1em 0 1em 0;
+    width: 95%;
+}
+
+.profile-stylingbutton:hover, .profile-deleteaccount:hover {
+    transform: scale(105%);
+}
+
+.profile-updatebutton:hover {
+    background-color: black;
+}
+
+.profile-styling-card-inner {
+    margin: 1em 3em 1em 3em;
+}
+
+.profile-styling-card-header {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.profile-styling-card-current{
+    font-size: 1.2em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
+}
+
+.profile-styling-card-current-preferences {
+    font-size: 1.1em;
+}
+
+.profile-deleteaccount {
+    background-color: #ff5050;
+    margin: 0 1em 1em 1.4em;
+    padding: 0.5em 1em 0.5em 1em;
+    display: block;
+    border-radius: 0.75em;
+    transition: all 0.3s;
+    width: 92%;
+}
+
+.form-basicinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    margin-top: 1em;
+    font-size: 1.1em;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width : 1200px) {
+    /* fredson implement this */
+    .profile-main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

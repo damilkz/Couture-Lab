@@ -1,0 +1,25 @@
+.notfound-text-container {
+    margin: 10em;
+    text-align: center;
+    font-family: 'Helvetica';
+}
+
+.notfound-header {
+    font-size: 3em;
+    font-weight: 600;
+} 
+
+.notfound-description {
+    font-size: 1.5em;
+}
+
+.notfound-redirect {
+    display: inline-block;
+    margin: 2em;
+    border-bottom: 0.1em solid #000000;
+    font-size: 1.5em;
+}
+
+.notfound-redirect:hover {
+    border-bottom: none;
+}

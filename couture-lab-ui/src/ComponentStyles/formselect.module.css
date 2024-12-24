@@ -1,0 +1,17 @@
+.form-select {
+    width: 20em;
+    border-radius: 0.7em;
+    border: 0.1em black solid;
+    padding: 0.4em;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.form-select:hover {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px #9ecaed;   
+}
+
+.form-errormsg {
+    color: #ff0000;
+}

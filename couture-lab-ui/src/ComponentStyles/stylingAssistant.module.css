@@ -1,0 +1,81 @@
+.chatbot-query {
+    font-size: 1.1em;
+}
+
+.starter-text {
+    font-size: 1.1em;
+    color: gray;
+}
+
+.sidebar-container {
+    display: flex;
+}
+
+.sidebar-button {
+    position: fixed;
+    font-weight: bold;
+    font-size: 1.8em;
+    z-index: 3;
+    top: 45%;
+    right: 0.6%;
+}
+
+.sidebar-hidden {
+    right: 98%;
+}
+
+.answer-log {
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 1em;
+    border-width: 0.1em;
+    box-shadow: 0 10px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 96%;
+    height: 83vh;
+    padding: 0.5em;
+    margin: 1.2vw 0 3vh 1vw;
+    overflow: auto;
+}
+
+.response {
+    font-size: 1.1em;
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.response img {
+    width: 30%;
+    background-color: white;
+    border: 0.1em solid #555;
+    border-radius: 1em;
+    margin: 1% 4%;
+}
+
+.link {
+    color: #DE7E5D;
+}
+
+.link:hover {
+    color: #DE7E5D;
+}
+
+.chatbot-container {
+    display: flex;
+    align-items: center;
+    margin: 1vh 0 0 1vw;
+}
+
+.query-button {
+    padding: 0.3em;
+    border-radius: 0.3em;
+    position: relative;
+    right: 3em;
+    background-image: -webkit-linear-gradient(30deg, #282a36 50%, transparent 50%);
+    background-image: linear-gradient(30deg, #282a36 50%, transparent 50%);
+    background-size: 50em;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    transition: all 0.1s ease-in-out;
+}

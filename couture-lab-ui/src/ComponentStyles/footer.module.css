@@ -1,0 +1,39 @@
+.footer-container {
+    color: #ffffff;
+    background-color: #000000;
+    width: 100%;
+}
+
+.footer-title {
+    font-family: "MarkPro";
+    display: flex;
+    padding: 1.5em 1.5em 1em 1.5em;
+    font-size: 2em;
+}
+
+.footer-content {
+    display: flex;
+    margin: 0 5em 0 3.2em;
+    padding: 0 0 1.5em 0;
+    justify-content: space-between;
+}
+
+.footer-date {
+    font-family: "Helvetica";
+}
+
+.couturelab-logo {
+    font-family: "MarkPro";
+}
+
+.footer-links {
+    list-style: none; 
+    display: flex; 
+    gap: 2em;
+    color: #ffffff;
+    font-family: "Helvetica";
+}
+
+.footer-links:hover {
+    color: #ffffff;
+}

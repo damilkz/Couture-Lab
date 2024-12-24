@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+ django-app:
+  build: .
+  stdin_open: true
+  tty: true
+  volumes:
+   - .:/django
+  env_file:
+   - .env
+  ports:
+   - 8000:8000
+  image: couture-lab-backend:django
+  container_name: couture_lab_backend
+  command: python manage.py runserver 0.0.0.0:8000

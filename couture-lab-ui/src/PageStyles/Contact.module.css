@@ -1,0 +1,89 @@
+.contact-intro-container {
+    background-image: linear-gradient(to right, #dfc7fe, #a4d3ff);
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 6em 4em 3em 4em;
+    font-size: 1.5em;
+    font-family: 'FuturaMaxi';
+}
+
+.contact-header {
+    font-size: 3em;
+}
+
+.contact-info-container {
+    font-family: 'Helvetica';
+}
+
+.contact-info:hover {
+    text-decoration: underline;
+}
+
+.contact-form-container {
+    background-color: #ffffff;
+    padding: 3em 0 5em 5em;
+    font-family: 'Helvetica';
+}
+
+.contact-form-header {
+    font-size: 5em;
+}
+
+.form-input-label {
+    margin-top: 0.7em;
+    font-size: 1.2em;
+
+}
+
+.form-input {
+    border: 1px solid rgba(153, 170, 181, 0.3);
+    padding: 0.4em;
+    border-radius: 0.3em;
+    width: 40em;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px #9ecaed;
+}
+
+.contact-form-holder {
+    margin: 0 0 0 9em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-submit {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    width: 12em;
+}
+
+.contact-form-submit:hover {
+    background-color: #353839;
+    cursor: pointer;
+}
+
+.contact-form-disabled,
+.contact-form-disabled:hover {
+    background-color: gray;
+    cursor: default;
+}
+
+@media only screen and (max-width : 925px) {
+    .contact-intro-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input {
+        width: 90%;
+    }
+}

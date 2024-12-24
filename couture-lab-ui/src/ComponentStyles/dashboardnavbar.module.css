@@ -1,0 +1,52 @@
+.dashboard-navbar {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: 'Helvetica';
+    font-size: 1.4em;
+    margin: 0;
+    padding: 1em 2em 0.5em 2em;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.couturelab-logo {
+    font-family: 'MarkPro';
+}
+
+.dashboard-navbar-usericon {
+    width: 1.5em;
+    background-color: #ffffff;
+    border-radius: 1em;
+}
+
+.dashboard-navbar-dropdown-content {
+    position: absolute;
+    background-color: #ededed;
+    color: #000000;
+    margin: 0.3em 0.3em 0 0;
+    padding: 0.5em;
+    right: 0;
+    border-radius: 0.5em;
+}
+
+.dashboard-navbar-dropdown-list {
+    list-style-type: none;
+}
+
+.dashboard-navbar-a {
+    padding-bottom:2px;
+    background-image: linear-gradient(#000 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 0.1em;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.dashboard-navbar-a:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 0.1em;
+}

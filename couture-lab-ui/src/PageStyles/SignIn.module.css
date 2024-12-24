@@ -1,0 +1,115 @@
+.signin-container {
+    padding: 10em 0 0 0;
+    background-image: linear-gradient(to right, #dfc7fe, #68b7ff);
+    height: 100vh;
+}
+
+.couturelab-logo {
+    display: flex;
+    width: fit-content;
+    font-family: "MarkPro";
+    font-size: 1.5em;
+}
+
+.signin-card {
+    padding: 2em 1em 2em 1em;
+    margin: 0 10em 0 10em;
+    background-color: #ffffff;
+    border: 0.1em solid #000000;
+    border-radius: 1.5em;
+    font-family: 'Helvetica';
+    min-width: 15em;
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.signin-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1em 0 0 0;
+}
+
+.signin-content-text {
+    margin: 0 0 0 1em;
+}
+
+.signin-header {
+    font-size: 2.25em;
+}
+
+.signin-welcomeback {
+    font-size: 1.5em;
+}
+
+.signin-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.form-title {
+    padding-top: 1em;
+}
+
+.form-input {
+    color: #000000;
+    border: 0.1em solid #b2b2b2;
+    border-radius: 0.5em;
+}
+
+.form-input[type="text"], .form-input[type='password'] {
+    padding: 0.2em 0 0.2em 0.5em;
+}
+
+.signin-submit {
+    background-color: black;
+    color: white;
+    border-radius: 1.5em;
+    margin-top: 1em;
+    padding: 0.2em 0 0.2em 0;
+    transition: all 0.2s;
+}
+
+.signin-submit:hover {
+    transform: scale(102%);
+    cursor: pointer;
+}
+
+.signin-register {
+    display: flex;
+    margin-top: 1em;
+    gap: 0.5em;
+}
+
+.signin-register-link {
+    font-weight: bold;
+    display: inline-block;
+    padding-bottom: 1px;
+    background-image: linear-gradient(#000 0 0);
+    background-position: 0 100%; /*OR bottom left*/
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition:
+      background-size 0.3s,
+      background-position 0s 0.3s; /*change after the size immediately*/
+}
+
+.signin-register-link:hover {
+    background-position: 100% 100%; /*OR bottom right*/
+    background-size: 100% 2px;
+}
+
+.signin-text-container {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .signin-content {
+        display: flex;
+        flex-direction: column;
+    }
+}

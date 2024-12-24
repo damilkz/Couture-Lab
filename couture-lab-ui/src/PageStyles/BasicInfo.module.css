@@ -1,0 +1,109 @@
+.basicinfo-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-family: "MarkPro";
+    background-color: #FFFFFF;
+    /* Keeps background color on whole screen to not display grey background color */
+    min-height: 100vh;
+    height: 100%;
+}
+
+.basicinfo-form-container {
+    display: flex; 
+    flex-direction: column;
+    margin: 3em 5em 4em 9em;
+}
+
+.basicinfo-header {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.basicinfo-alreadyanswered {
+    font-size: 1.5em;
+}
+
+.basicinfo-backto {
+    /* Inline-block needed because of margin collapse */
+    display: inline-block;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 2em 0 0 0;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+}
+
+.basicinfo-backto:hover {
+    background-color: #4c4c4c;
+}
+
+.form-basicinfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header {
+    font-size: 1.2em;
+    text-decoration: underline;
+}
+
+.form-input {
+    width: 20em;
+    border-radius: 0.7em;
+    border: 0.1em black solid;
+    padding: 0.4em;
+    margin: 0.5em 0 0 0;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 5px #9ecaed; 
+}  
+
+.form-errormsg {
+    color: #ff0000;
+}
+
+.basicinfo-next-button {
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0.2em;
+}
+
+.basicinfo-next-button:disabled {
+    background-color: #d3d3d3;
+    color: #000000;
+}
+
+.basicinfo-navbuttons {
+    margin: 1em 0 1em 8em;
+}
+
+.basicinfo-sidecontainer {
+    background-image: linear-gradient(to right, #dfc7fe, #68b7ff);
+    height: 100%;
+}
+
+.basicinfo-sidetext, .basicinfo-sidetext-last {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+.basicinfo-sidetext {
+    color: #ffffff;
+    margin: 1em 3em 0 3em;
+}
+
+.basicinfo-sidetext-last {
+    color: #000000;
+    margin: 0 3em 0 3em;
+}
+
+.basicinfo-side-bottomtext {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin: 0 7em 0 7em;
+}
